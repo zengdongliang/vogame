@@ -133,8 +133,8 @@ type ChartType = 'acceleration' | 'velocity' | 'position';
 // 力与运动游乐场游戏主类
 export class ForceMotionPlayground implements SimController {
   private container: HTMLElement;
-  private canvas: HTMLCanvasElement;
-  private ctx: CanvasRenderingContext2D;
+  private canvas!: HTMLCanvasElement;
+  private ctx!: CanvasRenderingContext2D;
   private animationFrameId: number | null = null;
   private isRunning: boolean = false;
   private simulationTime: number = 0;

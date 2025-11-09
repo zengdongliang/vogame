@@ -265,8 +265,8 @@ export class Rope {
 // 杠杆与滑轮构建器游戏主类
 export class LeversPulleysBuilder implements SimController {
   private container: HTMLElement;
-  private canvas: HTMLCanvasElement;
-  private ctx: CanvasRenderingContext2D;
+  private canvas!: HTMLCanvasElement;
+  private ctx!: CanvasRenderingContext2D;
   private animationFrameId: number | null = null;
   private isRunning: boolean = false;
   private simulationTime: number = 0;

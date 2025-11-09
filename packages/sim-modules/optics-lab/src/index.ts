@@ -656,8 +656,8 @@ export class Screen {
 // 光学实验室游戏主类
 export class OpticsLab implements SimController {
   private container: HTMLElement;
-  private canvas: HTMLCanvasElement;
-  private ctx: CanvasRenderingContext2D;
+  private canvas!: HTMLCanvasElement;
+  private ctx!: CanvasRenderingContext2D;
   private animationFrameId: number | null = null;
   private isRunning: boolean = false;
   private simulationTime: number = 0;

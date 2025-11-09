@@ -336,8 +336,8 @@ export class Multimeter {
 // 电路故障排除游戏主类
 export class CircuitDebugger implements SimController {
   private container: HTMLElement;
-  private canvas: HTMLCanvasElement;
-  private ctx: CanvasRenderingContext2D;
+  private canvas!: HTMLCanvasElement;
+  private ctx!: CanvasRenderingContext2D;
   private animationFrameId: number | null = null;
   private isRunning: boolean = false;
   
