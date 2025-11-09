@@ -182,12 +182,5 @@ Thumbs.db
 # Ignore all files except source code and essential documents
 !README.md
 !docs/
-docs/**
 !docs/spec/
-docs/spec/**
 !docs/games/
-docs/games/**
-
-# But ignore temporary files in docs
-docs/*/**/~*
-docs/*/**/.DS_Store
