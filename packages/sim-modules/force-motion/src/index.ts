@@ -140,7 +140,7 @@ export class ForceMotionPlayground implements SimController {
   private simulationTime: number = 0;
   
   // 游戏状态
-  private physicsObject: PhysicsObject;
+  private physicsObject!: PhysicsObject;
   private forces: ForceVector[] = [];
   private currentLevel: number = 1;
   private metrics: Record<string, number | string | boolean> = {};
@@ -713,6 +713,7 @@ export class ForceMotionPlayground implements SimController {
   private drawControlPanel() {
     const ctx = this.ctx;
     const width = this.canvas.width;
+    const height = this.canvas.height;
     
     // 控制面板背景
     ctx.fillStyle = 'rgba(15, 23, 42, 0.8)';
