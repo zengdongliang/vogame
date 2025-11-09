@@ -902,9 +902,9 @@ export class LeversPulleysBuilder implements SimController {
     ctx.fillText(levelDesc, 20, height - 120);
     
     // 指标显示
-    ctx.fillText(`力矩误差: ${this.metrics.torque_balance_error_pct?.toFixed(1)}%`, 20, height - 100);
-    ctx.fillText(`最小拉力: ${this.metrics.min_pull_force_N?.toFixed(1)}N`, 20, height - 80);
-    ctx.fillText(`绳长使用: ${this.metrics.rope_length_used_m?.toFixed(1)}m`, 20, height - 60);
+    ctx.fillText(`力矩误差: ${typeof this.metrics.torque_balance_error_pct === 'number' ? (this.metrics.torque_balance_error_pct as number).toFixed(1) : '0'}%`, 20, height - 100);
+    ctx.fillText(`最小拉力: ${typeof this.metrics.min_pull_force_N === 'number' ? (this.metrics.min_pull_force_N as number).toFixed(1) : '0'}N`, 20, height - 80);
+    ctx.fillText(`绳长使用: ${typeof this.metrics.rope_length_used_m === 'number' ? (this.metrics.rope_length_used_m as number).toFixed(1) : '0'}m`, 20, height - 60);
   }
 }
 

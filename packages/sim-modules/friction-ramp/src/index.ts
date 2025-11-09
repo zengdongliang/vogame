@@ -132,7 +132,7 @@ export class FrictionRamp implements SimController {
   private simulationTime: number = 0;
   
   // 游戏状态
-  private physicsObject: PhysicsObject;
+  private physicsObject!: PhysicsObject;
   private rampAngle: number = 0; // 斜面角度 (弧度)
   private rampLength: number = 400; // 斜面长度
   private rampHeight: number = 100; // 斜面高度

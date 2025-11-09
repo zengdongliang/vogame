@@ -113,6 +113,7 @@ export class Sensor {
   radius: number = 15;
   detected: boolean = false; // 是否检测到光线
   intensity: number = 0; // 接收到的光线强度
+  isDragging: boolean = false; // 添加缺失的属性
   
   constructor(x: number, y: number) {
     this.x = x;
@@ -141,6 +142,12 @@ export class Sensor {
       ctx.textBaseline = 'middle';
       ctx.fillText(`${Math.round(this.intensity * 100)}%`, this.x, this.y + this.radius + 15);
     }
+  }
+  
+  // 添加缺失的 containsPoint 方法
+  containsPoint(x: number, y: number): boolean {
+    const distance = Math.sqrt(Math.pow(x - this.x, 2) + Math.pow(y - this.y, 2));
+    return distance <= this.radius;
   }
   
   // 检查是否被光线击中
@@ -1273,8 +1280,8 @@ export class OpticsLab implements SimController {
     ctx.fillText(levelDesc, 20, 80);
     
     // 指标显示
-    ctx.fillText(`目标辐照度: ${this.metrics.target_irradiance_pct?.toFixed(1)}%`, 20, 100);
-    ctx.fillText(`成像质量: ${this.metrics.focus_quality_score?.toFixed(1)}%`, 20, 120);
+    ctx.fillText(`目标辐照度: ${typeof this.metrics.target_irradiance_pct === 'number' ? (this.metrics.target_irradiance_pct as number).toFixed(1) : '0'}%`, 20, 100);
+    ctx.fillText(`成像质量: ${typeof this.metrics.focus_quality_score === 'number' ? (this.metrics.focus_quality_score as number).toFixed(1) : '0'}%`, 20, 120);
   }
 }
 
