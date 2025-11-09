@@ -344,7 +344,7 @@ export class CircuitDebugger implements SimController {
   // 游戏状态
   private components: CircuitComponent[] = [];
   private wires: Wire[] = [];
-  private multimeter: Multimeter;
+  private multimeter!: Multimeter;
   private selectedComponent: CircuitComponent | null = null;
   private selectedWire: Wire | null = null;
   private currentLevel: number = 1;
