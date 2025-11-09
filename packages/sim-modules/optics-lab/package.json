@@ -1,0 +1,24 @@
+{
+  "name": "@vogame/optics-lab",
+  "version": "0.1.0",
+  "description": "光学实验室 - 物理模拟模块",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": ["physics", "simulation", "education", "optics", "light"],
+  "author": "vogame",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "@types/node": "^18.14.0"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.28"
+  }
+}

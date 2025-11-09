@@ -111,36 +111,48 @@ export default function Home() {
                 <p>探索密度和浮力概念</p>
               </div>
             </a>
-            <div className="module-card">
-              <div className="module-icon">⚡</div>
-              <h3>电路故障排除</h3>
-              <p>学习电路和故障排除</p>
-            </div>
-            <div className="module-card">
-              <div className="module-icon">🏃</div>
-              <h3>力与运动</h3>
-              <p>理解牛顿运动定律</p>
-            </div>
-            <div className="module-card">
-              <div className="module-icon">🏔️</div>
-              <h3>摩擦与斜面</h3>
-              <p>研究摩擦力和斜面</p>
-            </div>
-            <div className="module-card">
-              <div className="module-icon">⚙️</div>
-              <h3>杠杆与滑轮</h3>
-              <p>实验简单机械</p>
-            </div>
-            <div className="module-card">
-              <div className="module-icon">🏹</div>
-              <h3>抛体沙盒</h3>
-              <p>探索抛体运动</p>
-            </div>
-            <div className="module-card">
-              <div className="module-icon">🌈</div>
-              <h3>光学实验室</h3>
-              <p>发现光的反射和折射</p>
-            </div>
+            <a href="/modules/circuit" className="module-card-link">
+              <div className="module-card">
+                <div className="module-icon">⚡</div>
+                <h3>电路故障排除</h3>
+                <p>学习电路和故障排除</p>
+              </div>
+            </a>
+            <a href="/modules/force-motion" className="module-card-link">
+              <div className="module-card">
+                <div className="module-icon">🏃</div>
+                <h3>力与运动</h3>
+                <p>理解牛顿运动定律</p>
+              </div>
+            </a>
+            <a href="/modules/friction-ramp" className="module-card-link">
+              <div className="module-card">
+                <div className="module-icon">🏔️</div>
+                <h3>摩擦与斜面</h3>
+                <p>研究摩擦力和斜面</p>
+              </div>
+            </a>
+            <a href="/modules/levers-pulleys" className="module-card-link">
+              <div className="module-card">
+                <div className="module-icon">⚙️</div>
+                <h3>杠杆与滑轮</h3>
+                <p>实验简单机械</p>
+              </div>
+            </a>
+            <a href="/modules/projectile-sandbox" className="module-card-link">
+              <div className="module-card">
+                <div className="module-icon">🏹</div>
+                <h3>抛体沙盒</h3>
+                <p>探索抛体运动</p>
+              </div>
+            </a>
+            <a href="/modules/optics-lab" className="module-card-link">
+              <div className="module-card">
+                <div className="module-icon">🌈</div>
+                <h3>光学实验室</h3>
+                <p>发现光的反射和折射</p>
+              </div>
+            </a>
             <div className="module-card">
               <div className="module-icon">🎵</div>
               <h3>声波工作室</h3>
